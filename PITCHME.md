@@ -4,19 +4,23 @@ What we do - homogeneousish configuration.
 
 # Stack:
 
- - Ansible
- - NorduGrid ARC CE
- - CentOS7
- - CVMFS/modules
- - Dell Hardware
- - Infiniband
- - KVM
- - NFSv4
- - Slurm
+ - Ansible, CentOS 7, CVMFS/modules/Easybuild, Dell Hardware, Infiniband
+ - KVM, NFSv4, NorduGrid ARC CE, **Slurm 15.08**
 
 #HSLIDE
 
-# what is ansible?
+# credits
+
+ - @jabl
+ - @A1ve5
+ - me
+
+#HSLIDE
+
+# ansible is a config management tool
+
+ - similar to puppet, quattor, cfengine, salt
+ - no daemon, uses ssh for push mode or cronjob for pull
 
 ~~~~
   - name: start and enable slurmctld
@@ -30,6 +34,13 @@ What we do - homogeneousish configuration.
  - ansible-playbook install.yml -t slurm --list-tags
 
 ... too many
+
+#HSLIDE
+# what it does (shortest version)
+
+Configure all the things for slurm
+
+picture.png
 
 #HSLIDE
 
@@ -76,7 +87,7 @@ ClusterName={{ slurm_clustername }}
 ControlMachine={{ slurm_service_node }}
 ~~~~
 
-#VSLIDE
+#HSLIDE
 
 ~~~~
   - name: sacctmgr show cluster siteName and store in slurm_clusterlist variable
@@ -92,9 +103,22 @@ ControlMachine={{ slurm_service_node }}
 
 #HSLIDE
 
-# credits
+# todolist:
+ - When to restart or just HIP after a config change?
+ - Topology Generation
+ - HA?
+ - Complete Testing (setup a slurm cluster and even submit a job on every change to the ansible role)
 
- - @jabl
- - @A1ve5
- - me
+#HSLIDE
 
+~8 clusters in Finland (the ones part of FGCI) are using https://github.com/CSC-IT-Center-for-Science/fgci-ansible which uses this ansible-role-slurm role. 
+Triton is the largest cluster with ~613 nodes
+
+#HSLIDE
+
+ - github
+ - ansible-push
+ - ansible-pull
+ - travis/waffle
+ - ansible-galaxy and requirements.yml to restrict which version/commit of an ansible role is used
+ - git-mirror
