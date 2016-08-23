@@ -22,6 +22,8 @@ What we do - homogeneousish configuration.
  - similar to puppet, quattor, cfengine, salt
  - no daemon, uses ssh for push mode or cronjob for pull
 
+#HSLIDE
+
 ~~~~
   - name: start and enable slurmctld
     service: name={{ slurmctld_service }} state=started enabled=yes
