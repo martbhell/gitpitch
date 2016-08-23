@@ -38,15 +38,15 @@ What we do - homogeneousish configuration.
 ... too many
 
 #HSLIDE
-# what it does (shortest version)
+what it does (shortest version)
 
-Configure all the things for slurm
+#Configure all the things for slurm
 
 picture.png
 
 #HSLIDE
 
-# what it does (shorter version)
+what it does (shorter version)
 
 configure:
  - one service node
@@ -56,7 +56,7 @@ configure:
 
 #HSLIDE
 
-# what it does (short version)
+what it does (short version)
 
  - add yum repo, install slurm, munge, mysql
  - add users
