@@ -4,7 +4,10 @@ Configure a slurm cluster with ansible
 ![FGCILogo](images/FGCI-logo.jpg)
 
 #HSLIDE
-<img src="images/CSC_2012_LOGO_RGB_72dpi.jpg" border="0"/>
+<img src="https://raw.githubusercontent.com/martbhell/gitpitch/master/images/CSC_2012_LOGO_RGB_72dpi.jpg" border="0"/>
+
+#HSLIDE
+![CSCLogo](https://raw.githubusercontent.com/martbhell/gitpitch/master/images/CSC_2012_LOGO_RGB_72dpi.jpg)
 
 #HSLIDE
 
