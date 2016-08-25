@@ -1,3 +1,12 @@
+# Configure a slurm cluster with ansible
+
+![CSCLogo](images/CSC_2012_LOGO_RGB_72dpi.jpg)
+![FGCILogo](images/FGCI-logo.jpg)
+
+
+#VSLIDE
+
+
 # FGCI/CSC
 
 What we do - homogeneousish configuration. 
