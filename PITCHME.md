@@ -1,4 +1,4 @@
-# Configure a slurm cluster with ansible
+Configure a slurm cluster with ansible
 
 ![CSCLogo](images/CSC_2012_LOGO_RGB_72dpi.jpg)
 ![FGCILogo](images/FGCI-logo.jpg)
