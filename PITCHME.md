@@ -13,8 +13,8 @@ What we do - homogeneousish configuration.
 
 # Stack:
 
- - Ansible, CentOS 7, CVMFS/modules/Easybuild, Dell Hardware, Infiniband
- - KVM, NFSv4, NorduGrid ARC CE, **Slurm 15.08**
+ - Ansible, CentOS7, CVMFS/modules/Easybuild, Dell, Infiniband
+ - KVM, NFSv4, NorduGrid ARC, PXE/kickstart, **Slurm 15.08**
 
 #HSLIDE
 
@@ -131,9 +131,17 @@ Triton is the largest cluster with ~613 nodes
 
 #HSLIDE
 
+![travis](images/TravisCI-Full-Color-7f5db09495c8b09c21cb678c4de18d21.png)
+![waffle](images/waffle_github.png)
+
+
+
+#HSLIDE
+
  - github
  - ansible-push
  - ansible-pull
  - travis/waffle
  - ansible-galaxy and requirements.yml to restrict which version/commit of an ansible role is used
  - git-mirror
+ - Grafana/Influxdb/Collectd
