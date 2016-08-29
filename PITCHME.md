@@ -47,6 +47,10 @@ What we do - homogeneousish configuration.
 ... too many
 
 #HSLIDE
+
+![FGCILogo](images/slurm-list-tasks.gif)
+
+#HSLIDE
 what it does (shortest version)
 
 #Configure all the things for slurm
