@@ -2,7 +2,7 @@
 
 CSC - IT Center for Science Ltd
 
-Johan Guldmyr, SLUG 2016 26-27.9.2016, Athens
+Johan Guldmyr, Slurm User Group 2016 26-27.9.2016, Athens, Greece
 ![FGCILogo](images/FGCI-logo.jpg)
 
 #HSLIDE
@@ -28,7 +28,7 @@ What we do - homogeneousish configuration.
 
 # ansible is a config management tool
 
- - similar to puppet, quattor, cfengine, salt
+ - similar to puppet, quattor, cfengine, salt, chef
  - no daemon, uses ssh for push mode or cronjob for pull
 
 #HSLIDE
