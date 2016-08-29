@@ -118,6 +118,24 @@ ControlMachine={{ slurm_service_node }}
 
 #HSLIDE
 
+#How to use it (single node)?
+~~~~
+mkdir -p slurm_workdir/{files,roles,group_vars/all}; cd slurm_workdir
+git clone https://github.com/CSC-IT-Center-for-Science/ansible-role-slurm roles/ansible-role-slurm
+git clone https://github.com/jabl/ansible-role-pam roles/ansible-role-pam
+echo "slurm_mysql_password: \"$(pwmake 128)\"" > group_vars/all/all.yml
+echo "slurm_munge_key_to_nfs: False" > group_vars/all/nfs.yml
+dd if=/dev/urandom of=files/munge.key bs=1k count=128 # 
+#create EL7 VMs/machines, be able to ssh in and sudo
+cp ansible-role-slurm/tests/inventory .
+$EDITOR inventory
+cp ansible-role-slurm/tests/test.yml .
+$EDITOR test.yml # 
+ansible-playbook -i inventory test.yml --diff
+~~~~
+
+#HSLIDE
+
 # todolist:
  - When to restart or just HIP after a config change?
  - Topology Generation
@@ -131,17 +149,13 @@ Triton is the largest cluster with ~613 nodes
 
 #HSLIDE
 
-![travis](images/TravisCI-Full-Color-7f5db09495c8b09c21cb678c4de18d21.png)
-![waffle](images/waffle_github.png)
-
-
+![travis](images/TravisCI-Full-Color-7f5db09495c8b09c21cb678c4de18d21.png) 
+![waffle](images/waffle_github.png) ![grafana](images/grafana_logo_new_transparent_200x48.png)
+![influxdb](images/illustration__influxdb.svg) 
 
 #HSLIDE
 
- - github
  - ansible-push
  - ansible-pull
- - travis/waffle
  - ansible-galaxy and requirements.yml to restrict which version/commit of an ansible role is used
  - git-mirror
- - Grafana/Influxdb/Collectd
