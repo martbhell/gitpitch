@@ -122,15 +122,15 @@ ControlMachine={{ slurm_service_node }}
 ~~~~
 mkdir -p slurm_workdir/{files,roles,group_vars/all}; cd slurm_workdir
 git clone https://github.com/CSC-IT-Center-for-Science/ansible-role-slurm roles/ansible-role-slurm
-git clone https://github.com/jabl/ansible-role-pam roles/ansible-role-pam roles/ansible-role-pam
-echo "slurm_mysql_password: \"$(pwmake 128)\"" > group_vars/all/slurm_mysql.yml
+git clone https://github.com/jabl/ansible-role-pam roles/ansible-role-pam
+echo "slurm_mysql_password: \"changeme\"" > group_vars/all/slurm_mysql.yml
 echo "slurm_munge_key_to_nfs: False" > group_vars/all/nfs.yml
-dd if=/dev/urandom of=files/munge.key bs=1k count=128 # 
+#dd if=/dev/urandom of=files/munge.key bs=1k count=128 # 
 #If the node has hostname "slurm-ansible" configure your ssh/config so you can ssh+sudo to that
-cp ansible-role-slurm/tests/inventory .
+cp roles/ansible-role-slurm/tests/inventory .
 $EDITOR inventory # put "slurm-ansible" under [install] and [compute]
 echo "slurm_compute_nodes: slurm-ansible" > group_vars/all/slurm_nodes.yml # define the nodelist in slurm
-cp ansible-role-slurm/tests/test.yml .
+cp roles/ansible-role-slurm/tests/test.yml .
 $EDITOR test.yml # remove at least storage_host and service_node variables
 # hosts: install,compute
 # remote_user: $USER
@@ -154,8 +154,8 @@ Triton is the largest cluster with ~613 nodes
 #HSLIDE
 
 ![travis](images/TravisCI-Full-Color-7f5db09495c8b09c21cb678c4de18d21.png) 
-![waffle](images/waffle_github.png) ![grafana](images/grafana_logo_new_transparent_200x48.png)
-![influxdb](images/illustration__influxdb.svg) 
+![waffle](images/waffle_github.png) ![grafana](images/grafana_logo_new_transparent.png)
+![influxdb](images/illustration_influxdb.svg) 
 
 #HSLIDE
 
