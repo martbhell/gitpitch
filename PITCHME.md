@@ -2,7 +2,7 @@
 
 CSC - IT Center for Science Ltd
 
-Johan Guldmyr, Slurm User Group 2016 26-27.9.2016, Athens, Greece
+Johan Guldmyr, Slurm User Group 26-27.9.2016, Athens
 ![FGCILogo](images/FGCI-logo.jpg)
 
 #HSLIDE
