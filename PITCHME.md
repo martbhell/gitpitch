@@ -1,7 +1,8 @@
 Configure a slurm cluster with ansible
 
-![CSCLogo](images/CSC_2012_LOGO_RGB_72dpi.jpg)
-Johan Guldmyr @ CSC, SLUG 2016, Athens
+CSC - IT Center for Science Ltd
+
+Johan Guldmyr, SLUG 2016 26-27.9.2016, Athens
 ![FGCILogo](images/FGCI-logo.jpg)
 
 #HSLIDE
