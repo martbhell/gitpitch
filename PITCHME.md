@@ -1,4 +1,4 @@
-Configure a slurm cluster with ansible
+#Configure a slurm cluster with ansible
 
 CSC - IT Center for Science Ltd
 
