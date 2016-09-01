@@ -123,19 +123,14 @@ ControlMachine={{ slurm_service_node }}
 mkdir -p slurm_workdir/{files,roles,group_vars/all}; cd slurm_workdir
 git clone https://github.com/CSC-IT-Center-for-Science/ansible-role-slurm roles/ansible-role-slurm
 git clone https://github.com/jabl/ansible-role-pam roles/ansible-role-pam
-echo "slurm_mysql_password: \"changeme\"" > group_vars/all/slurm_mysql.yml
-echo "slurm_munge_key_to_nfs: False" > group_vars/all/nfs.yml
-#dd if=/dev/urandom of=files/munge.key bs=1k count=128 # 
 #If the node has hostname "slurm-ansible" configure your ssh/config so you can ssh+sudo to that
 cp roles/ansible-role-slurm/tests/inventory .
 $EDITOR inventory # put "slurm-ansible" under [install] and [compute]
-echo "slurm_compute_nodes: slurm-ansible" > group_vars/all/slurm_nodes.yml # define the nodelist in slurm
 cp roles/ansible-role-slurm/tests/test.yml .
-$EDITOR test.yml # remove at least storage_host and service_node variables
-# hosts: install,compute
+$EDITOR test.yml # for sudo set these in test.yml:
 # remote_user: $USER
 # become: True 
-ansible-playbook -i inventory test.yml --diff
+ansible-playbook -i inventory test.yml --diff # Then run ansible!
 ~~~~
 
 #HSLIDE
