@@ -141,8 +141,7 @@ ansible-playbook -i inventory test.yml --diff # Then run ansible!
 
 #HSLIDE
 
-# does javascript work?
-<script type="text/javascript" src="https://asciinema.org/a/c79uf7x7xagj83dcnwj2csz2s.js" id="asciicast-c79uf7x7xagj83dcnwj2csz2s" async></script>
+[![link to the asciicast](https://asciinema.org/a/c79uf7x7xagj83dcnwj2csz2s.png)](https://asciinema.org/a/c79uf7x7xagj83dcnwj2csz2s)
 
 #HSLIDE
 
