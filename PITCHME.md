@@ -118,14 +118,14 @@ ControlMachine={{ slurm_service_node }}
 
 #HSLIDE
 
-#(single node) part 1
+#(single centos7 node) part 1
 ~~~~
+#If the node has hostname "slurm-ansible" configure your ssh/config so you can ssh+sudo to that
 sudo yum install ansible
 mkdir -p slurm_workdir/{files,roles,group_vars/all}; cd slurm_workdir
 git clone https://github.com/CSC-IT-Center-for-Science/ansible-role-slurm roles/ansible-role-slurm
 git clone https://github.com/jabl/ansible-role-pam roles/ansible-role-pam
 git clone https://github.com/CSC-IT-Center-for-Science/ansible-role-nhc roles/ansible-role-nhc
-#If the node has hostname "slurm-ansible" configure your ssh/config so you can ssh+sudo to that
 cp roles/ansible-role-slurm/tests/inventory .
 cp roles/ansible-role-slurm/tests/test.yml .
 $EDITOR inventory # put "slurm-ansible" under [install] and [compute]
@@ -137,9 +137,13 @@ ansible-playbook -i inventory test.yml --diff # Then run ansible!
 
 #HSLIDE
 
+![ansible-role-slurm](images/ansible_role_slurm_1.gif)
+
+#HSLIDE
+
 #(single node) part 2
 
-If you want 16.05 set this variable in test.yml:
+If you want 16.05 set this variable (for example in test.yml):
 
 ~~~~
      - fgci_slurmrepo_version: "fgcislurm1605"
