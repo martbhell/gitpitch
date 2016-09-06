@@ -141,6 +141,11 @@ ansible-playbook -i inventory test.yml --diff # Then run ansible!
 
 #HSLIDE
 
+# does javascript work?
+<script type="text/javascript" src="https://asciinema.org/a/c79uf7x7xagj83dcnwj2csz2s.js" id="asciicast-c79uf7x7xagj83dcnwj2csz2s" async></script>
+
+#HSLIDE
+
 #(single node) part 2
 
 If you want 16.05 set this variable (for example in test.yml):
