@@ -190,7 +190,7 @@ Triton is the largest cluster with ~613 nodes
 ![travis](images/TravisCI-Full-Color-7f5db09495c8b09c21cb678c4de18d21.png) 
 ![waffle](images/waffle_github.png) 
 ![grafana](images/grafana_logo_new_transparent.png)
-![influxdb](images/illustration_influxdb.svg) 
+![influxdb](images/influxdb.png) 
 
 #HSLIDE
 
