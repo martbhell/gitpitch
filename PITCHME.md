@@ -175,7 +175,7 @@ If you want 16.05 set this variable (for example in test.yml):
 #HSLIDE
 
 # todolist:
- - When to restart or just HIP after a config change?
+ - When to restart or just SIGHUP after a config change?
  - Topology Generation
  - HA?
  - Complete Testing (setup a slurm cluster and even submit a job on every change to the ansible role)
