@@ -20,9 +20,10 @@ What we do - homogeneousish configuration.
 
 # credits
 
- - @jabl
  - @A1ve5
+ - @jabl
  - me
+ - @passerim
 
 #HSLIDE
 
@@ -42,7 +43,7 @@ What we do - homogeneousish configuration.
 
 #HSLIDE
 
-# ansible-role-slurm
+# ansible-role-slurm role contents
 
 ~~~~
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 defaults
@@ -174,6 +175,14 @@ If you want 16.05 set this variable (for example in test.yml):
 
 #HSLIDE
 
+# what are the (good) defaults?
+
+ - All the settings in slurm.conf are variables
+ - It is possible to add new settings to slurm.conf without modifying the role (add new items to an ansible variable)
+
+
+#HSLIDE
+
 # todolist:
  - When to restart or just SIGHUP after a config change?
  - Topology Generation
@@ -198,3 +207,7 @@ Triton is the largest cluster with ~613 nodes
  - ansible-pull
  - ansible-galaxy and requirements.yml to restrict which version/commit of an ansible role is used
  - git-mirror
+
+#HSLIDE
+
+#Fin
