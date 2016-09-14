@@ -49,11 +49,8 @@ What we do - homogeneousish configuration.
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 defaults
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 files
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 handlers
--rw-rw-r--. 1 myuser group 1095 Sep  1 14:30 LICENSE
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 meta
--rw-rw-r--. 1 myuser group 3317 Sep  1 14:30 OPENSTACK.md
 -rw-rw-r--. 1 myuser group 1789 Sep  1 14:30 README.md
--rw-rw-r--. 1 myuser group  146 Sep  1 14:30 requirements.yml
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 tasks
 drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 templates
 drwxr-xr-x. 5 myuser group 4096 Sep  2 11:06 tests
@@ -61,6 +58,8 @@ drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 vars
 ~~~~
 
 #HSLIDE
+
+#What does ansible-role-slurm do?
 
  - ansible-playbook install.yml -t slurm --list-tags
 
