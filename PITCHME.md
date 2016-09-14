@@ -18,6 +18,15 @@ What we do - homogeneousish configuration.
 
 #HSLIDE
 
+#Agenda
+ - history of ansible-role-slurm
+ - ansible modules, tasks, playbooks and roles
+ - what ansible-role-slurm does
+ - how to use it
+ - other tools
+
+#HSLIDE
+
 # credits / history
 
  - @A1ve5
@@ -218,8 +227,12 @@ If you want 16.05 set this variable (for example in test.yml):
 
 #HSLIDE
 
+# how we work / release management
+
 ~8 clusters in Finland (the ones part of FGCI) are using https://github.com/CSC-IT-Center-for-Science/fgci-ansible which uses this ansible-role-slurm role. 
 Triton is the largest cluster with ~613 nodes
+
+ansible-galaxy and requirements.yml to restrict which version/commit of an ansible role is used
 
 #HSLIDE
 
@@ -230,10 +243,11 @@ Triton is the largest cluster with ~613 nodes
 
 #HSLIDE
 
- - ansible-push
+#scaling
+
  - ansible-pull
- - ansible-galaxy and requirements.yml to restrict which version/commit of an ansible role is used
  - git-mirror
+ - http proxies
 
 #HSLIDE
 
