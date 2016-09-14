@@ -79,23 +79,6 @@ What we do - homogeneousish configuration.
 
 #HSLIDE
 
-# ansible-role-slurm role contents
-
-~~~~
-$ ls -l roles/ansible-role-slurm/
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 defaults
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 files
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 handlers
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 meta
--rw-rw-r--. 1 myuser group 1789 Sep  1 14:30 README.md
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 tasks
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 templates
-drwxr-xr-x. 5 myuser group 4096 Sep  2 11:06 tests
-drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 vars
-
-
-#HSLIDE
-
 #What does ansible-role-slurm do?
 
  - ansible-playbook install.yml --tags=slurm --list-tags
