@@ -59,9 +59,37 @@ drwxr-xr-x. 2 myuser group 4096 Sep  2 11:06 vars
 
 #HSLIDE
 
+#An ansible-playbook:
+
+~~~~
+ - hosts: install,compute
+   remote_user: root
+   roles:
+     - ansible-role-pam
+     - ansible-role-nhc
+     - ansible-role-slurm
+~~~~
+
+#HSLIDE
+
+#a playbook with tags (and sudo):
+
+~~~~
+ - hosts: install,compute
+   remote_user: cloud-user
+   become: True
+   roles:
+     - { role: ansible-role-pam, tags: [ 'auth', 'pam' ] }
+     - { role: ansible-role-nhc, tags: [ 'nhc', 'slurm' ] }
+     - { role: ansible-role-slurm, tags: [ 'slurm' ] }
+~~~~
+
+
+#HSLIDE
+
 #What does ansible-role-slurm do?
 
- - ansible-playbook install.yml -t slurm --list-tags
+ - ansible-playbook install.yml --tags=slurm --list-tags
 
 ... too many
 
