@@ -18,7 +18,7 @@ What we do - homogeneousish configuration.
 
 #HSLIDE
 
-# credits
+# credits / history
 
  - @A1ve5
  - @jabl
