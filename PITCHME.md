@@ -81,7 +81,7 @@ What we do - homogeneousish configuration.
 
 #What does ansible-role-slurm do?
 
- - ansible-playbook install.yml --tags=slurm --list-tags
+ - ansible-playbook install.yml --tags=slurm --list-tasks
 
 ... too many
 
