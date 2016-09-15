@@ -202,15 +202,16 @@ If you want 16.05 set this variable (for example in test.yml):
 
 #HSLIDE
 
-# todolist:
+# nice-to-have-list:
  - When to restart or just SIGHUP after a config change?
  - Topology Generation
- - HA?
+ - HA
  - Complete Testing (setup a slurm cluster and even submit a job on every change to the ansible role)
+ - slurm updates
 
 #HSLIDE
 
-# how we work / release management
+how we work / release management:
 
 ~8 clusters in Finland (the ones part of FGCI) are using https://github.com/CSC-IT-Center-for-Science/fgci-ansible which uses this ansible-role-slurm role. 
 Triton is the largest cluster with ~613 nodes
@@ -229,7 +230,7 @@ ansible-galaxy and requirements.yml to restrict which version/commit of an ansib
 #scaling
 
  - ansible-pull
- - git-mirror
+ - local git-mirror
  - http proxies
 
 #HSLIDE
